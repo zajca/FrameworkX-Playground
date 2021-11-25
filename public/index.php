@@ -34,8 +34,7 @@ $file = __DIR__ . '/../var/cache/container.php';
 
 $app = new FrameworkX\App(
     Loop::get(),
-    $container->get(ResponseMiddleware::class),
-    $container->get(ArgumentValueResolverMiddleware::class),
+    $container->get(ResponseMiddleware::class)
 );
 $app->get('/', $container->get(\App\Action\Index::class));
 $app->get('/resolver', $container->get(ArgumentValueResolverMiddleware::class), $container->get(\App\Action\Resolver\Resolver::class));

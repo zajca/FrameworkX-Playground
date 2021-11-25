@@ -1,0 +1,27 @@
+{
+    "require": {
+        "clue/framework-x": "dev-main",
+        "symfony/dependency-injection": "6.*",
+        "symfony/config": "6.*",
+        "react/async": "dev-main || 3.x-dev",
+        "symfony/messenger": "^6.0@RC",
+        "symfony/http-kernel": "^6.0@RC",
+        "symfony/serializer": "^6.0@RC",
+        "symfony/uid": "^6.0@RC",
+        "symfony/string": "^6.0@RC",
+        "webmozart/assert": "^1.10",
+        "symfony/validator": "^6.0@RC",
+        "symfony/framework-bundle": "^6.0@RC",
+        "symfony/property-access": "^6.0@RC"
+    }
+    ,
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "minimum-stability": "beta"
+}
